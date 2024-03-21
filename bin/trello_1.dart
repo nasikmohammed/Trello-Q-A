@@ -1,6 +1,11 @@
+import 'leeto.dart';
+
 void main() {
-  addonee();
-   multipy();
+//addonee();
+//
+//multipy();
+  // sumofarray();
+  leeto();
 }
 
 multipy() {
@@ -11,8 +16,6 @@ multipy() {
   var result = num11 * num22;
   print(result);
 }
-
-
 
 addonee() {
   List<int> digits = [1, 2, 3];
@@ -30,4 +33,21 @@ addonee() {
     digits.insert(0, carry);
   }
   print(digits);
+}
+
+sumofarray() {
+  List<int> A = [4, 3, 2, 10];
+  List<int> B = [];
+
+  for (int i = 0; i < A.length; i++) {
+    int C = 0;
+    for (int j = 0; j < A.length; j++) {
+      if (j != i) {
+        C += A[j];
+      }
+    }
+    B.add(C);
+  }
+
+  print(B);
 }
